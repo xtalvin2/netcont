@@ -1,0 +1,99 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap');
+
+/* Nigeria WiFi Billing — Dark theme design system */
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 222 12% 12%;
+    --foreground: 0 0% 85%;
+    --card: 222 10% 15%;
+    --card-foreground: 0 0% 85%;
+    --popover: 222 10% 15%;
+    --popover-foreground: 0 0% 85%;
+    --primary: 24 95% 48%;
+    --primary-foreground: 222 15% 10%;
+    --secondary: 26 85% 42%;
+    --secondary-foreground: 0 0% 85%;
+    --muted: 222 8% 17%;
+    --muted-foreground: 220 6% 55%;
+    --accent: 220 65% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 7% 22%;
+    --input: 220 7% 22%;
+    --ring: 24 95% 48%;
+    --chart-1: 24 95% 48%;
+    --chart-2: 220 65% 54%;
+    --chart-3: 142 70% 45%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 222 12% 11%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 24 95% 48%;
+    --sidebar-primary-foreground: 222 15% 10%;
+    --sidebar-accent: 222 8% 17%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 220 7% 18%;
+    --sidebar-ring: 24 95% 48%;
+  }
+
+  .dark {
+    --background: 222 12% 12%;
+    --foreground: 0 0% 85%;
+    --card: 222 10% 15%;
+    --card-foreground: 0 0% 85%;
+    --popover: 222 10% 15%;
+    --popover-foreground: 0 0% 85%;
+    --primary: 24 95% 48%;
+    --primary-foreground: 222 15% 10%;
+    --secondary: 26 85% 42%;
+    --secondary-foreground: 0 0% 85%;
+    --muted: 222 8% 17%;
+    --muted-foreground: 220 6% 55%;
+    --accent: 220 65% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 7% 22%;
+    --input: 220 7% 22%;
+    --ring: 24 95% 48%;
+    --chart-1: 24 95% 48%;
+    --chart-2: 220 65% 54%;
+    --chart-3: 142 70% 45%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 222 12% 11%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 24 95% 48%;
+    --sidebar-primary-foreground: 222 15% 10%;
+    --sidebar-accent: 222 8% 17%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 220 7% 18%;
+    --sidebar-ring: 24 95% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Urbanist', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+  }
+}
